@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 50%;
+}
+/*balk*/
+
+div.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+nav{
+    align-items: center;
+    display: flex; 
+    padding: 2rem;
+    height: 15vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #000000;
+    justify-content: space-between;
+    font-size: 1px;
+    font-family: 'Merriweather', serif;
+    z-index: auto;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 20%;
+}
+nav li{
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav img{
+    width: 5vw;
+    margin-right: auto;
+}
+/*pagina's*/
+section{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+nav a:hover{
+    color: rgb(0, 162, 216);
+}
+/*pagina 1*/
+section#page-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url(landing-page.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+div.txt{
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    color: rgb(236, 236, 236);
+    text-shadow: 2px 2px 5px black;
+    margin-top: 225px;
+    opacity: 10;
+}
+div.txt p{
+    font-size: 30px;
+    margin-top: 100px;
+}
+button#click-down{
+    color: white;
+    margin-top: 75px;
+    font-size: 35px;
+    padding: 25px 70px;
+    font-family: 'Merriweather', serif;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgb(0, 162, 216);
+    border: none;
+}
+/*pagina 2*/
+section#page-two{
+    background: url(new-york-page.png) no-repeat center;
+    background-size: cover;
+}
+div.txt-two{
+    position: absolute;
+    font-family: 'Merriweather', serif;
+    margin-left: 100px;
+    margin-top: 300px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+div.txt-two h1{
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 20%;
+}
+/*pagina 3*/
+section#page-tre{
+    background-color: rgb(5, 5, 10);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+}
+div.txt-tre{
+    color: white;
+    font-size: 30px;
+}
+/*pagina 4*/
+section#page-for{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img#block{
+    top: 0;
+    background-color: black;
+    width: 3vw;
+    padding: 20px 157px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div.card{
+    min-width: 360px;
+    max-width: 360px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0px 0px 50px 0px;
+    font-family: 'Merriweather', serif;
+}
+div.card h1{
+    margin-top: 30px;
+}
+div.card p{
+    margin-top: 100px;
+}
+
+/*pagina 5*/
+section#page-fi{
+    height: 120vh;
+    background: url(contact-mountain.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+div.contt{
+    margin-top: 15%;
+    font-size: 30px;
+    background: rgba(5, 5, 10, 0.7);
+    border-radius: 30px;
+    color: white;
+    padding-top: 50px;
+}
+input#one{
+    padding: 25px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+input#two{
+    margin-top: 75px;
+    color: white;
+    padding: 25px 400px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    background-color: rgb(0, 162, 216);
+    border: none;
+    border-radius: 0px 0px 30px 30px;
+}
+div.contt h1{
+    margin-bottom: 75px;
+}
+/*EINDUUH*/
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 10);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer img#big{
+    width: 10vw;
+    margin-left: -200px;
+}
+footer img#snall{
+    width: 2.5vw;
+    margin-left: 100px;
+}
+
+
+
+/* devices*/
+
+@media only screen and (max-width: 480px) {
+    nav img{
+        position: absolute;
+        top: 0;
+        margin-top: 20px;
+        margin-left: 180px;
+        width: 20vw;
+    }
+    nav ul{
+        margin-top: 20px;
+    }
+    div.txt{
+        font-size: 25px;
+        margin-top: 275px;
+    }
+    div.txt p{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    button#click-down{
+        margin-top: 55px;
+        font-size: 25px;
+        padding: 15px 50px;
+    }
+
+    /*PGE2*/
+    div.txt-two{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    div.txt-two h1{
+        text-overflow: clip;
+        line-height: normal;
+    }
+    div.txt-tre{
+        font-size: 25px;
+    }
+    section#page-for{
+        height: 150vh;
+        flex-direction: column;
+    }
+    div.card{
+        min-width: 300px;
+        max-width: 300px;
+        font-size: 15px;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    /*page3*/
+    div.contt{
+        margin-top: 55%;
+    }
+    img#block{
+        padding: 20px 143px;
+    }
+    input#one{
+        width: 150px;
+    }
+    input#two{
+        padding: 25px 200px;
+    }
+}
+
+
